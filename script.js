@@ -88,9 +88,12 @@ function tapLove(id) {
 
       typeWriterEffect(`Gửi ${userName} thân mến! 💌\n\n`, "greeting", () => {
         typeWriterEffect(
-          ` Giáng Sinh tới rùiii ! Chúc ${userName} có thật nhiều phút giây an yên, tim ấm hơn trời đông và nụ cười luôn “bật đèn sưởi” 🌹 
-Mong mọi điều nhỏ bé nhất cũng đủ làm ${userName}  cảm thấy hạnh phúc, mọi lo toan được tạm nghỉ phép, và bình an ở lại thật lâu 🤗
-Merry Christmas!!! 🎁💖`,
+          `Giáng Sinh tới rùiii !!
+           Chúc ${userName} có thật nhiều phút giây an yên,
+           tim ấm hơn trời đông và nụ cười luôn “bật đèn sưởi” 🌹 
+           Mong mọi điều nhỏ bé nhất cũng đủ làm ${userName}  cảm thấy hạnh phúc,
+           mọi lo toan được tạm nghỉ phép, và bình an ở lại thật lâu 🤗
+           Merry Christmas!!! 🎁💖`,
           "loveMsg",
           () => {
             const fromTag = document.createElement("div");
