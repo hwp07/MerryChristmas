@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gửi lời chúc Giáng sinh ấm áp đến người đặc biệt" />
+  <title>Merry Christmas 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Container cho tuyết rơi -->
+  <div id="snow-container"></div>
+
+  <!-- Main wrapper để dễ căn giữa toàn bộ nội dung -->
+  <div class="main-wrapper">
+
+    <div id="startStage" class="stage">
+      <img src="giftbox.png" alt="Hộp quà Giáng sinh" class="gift-image" onclick="startApp()" />
+      <p>Nhấn vào hộp quà để mở điều kỳ diệu Giáng sinh nhé! 🎅</p>
+    </div>
+
+    <div id="inputStage" class="stage" style="display: none;"></div>
+
+    <div id="loveStage" class="stage" style="display: none;">
+      <p id="lovePrompt">Chạm đủ <strong>4 cây thông</strong> để nhận quà đặc biệt nè 🎄✨</p>
+      <div id="loveIcons">
+        <span class="love-icon" onclick="tapLove(1)">🎄</span>
+        <span class="love-icon" onclick="tapLove(2)">🎄</span>
+        <span class="love-icon" onclick="tapLove(3)">🎄</span>
+        <span class="love-icon" onclick="tapLove(4)">🎄</span>
+      </div>
+    </div>
+
+    <div id="cardStage" class="stage" style="display: none;">
+      <div class="card">
+        <img src="cute.gif" alt="Cute Christmas gif" class="gif" />
+        <div id="greeting"></div>
+        <div id="loveMsg"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Nhạc nền -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="YouTube.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
